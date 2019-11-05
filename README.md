@@ -5,10 +5,15 @@
 1. python -m venv venv
 2. venv\Scripts\activate
 3. python -m pip install --upgrade pip
+
    pip install django
+   
    pip install djangorestframework 
+   
    pip install django-cors-headers  
+   
    pip install Pillow
+   
    cd backend
    
 4. python manage.py makemigrations
