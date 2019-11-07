@@ -1,40 +1,26 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import Navbar from './components/Navbar'
+import {BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Post from './components/Post'
 class App extends Component {
-    state = {
-        posts: []
-    };
-
-    async componentDidMount() {
-        try {
-            const res = await fetch('http://127.0.0.1:8000/api/');
-            const posts = await res.json();
-            this.setState({
-                posts
-            });
-        } catch (e) {
-            console.log(e);
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                {this.state.posts.map(item => (
-                    <div key={item.id}>
-                        <h1>{item.brand}</h1>
-                        <span>{item.name}</span>
-                        <br></br>
-                        <span>{item.desc}</span>
-                        <div>
-                        <img src={item.image}/>
-             
-                        </div>
-                    </div>
-                ))}
-            </div>
-        );
-    }
+  render(){
+    return(
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/:post_id' component={Post} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App;
