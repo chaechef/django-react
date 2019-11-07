@@ -3,8 +3,10 @@ import Navbar from './components/Navbar'
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
-import Contact from './components/Contact'
+import MyPage from './components/MyPage'
 import Post from './components/Post'
+import Auth from './components/Auth'
+
 class App extends Component {
   render(){
     return(
@@ -14,7 +16,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
+            <Route path='/mypage' component={MyPage} />
+            <Route path='/auth/:kind' exact ={true} component={Auth} />
             <Route path='/:post_id' component={Post} />
           </Switch>
         </div>

@@ -4,13 +4,13 @@ import { NavLink, withRouter} from 'react-router-dom'
 const Navbar = (props) =>{
 
     return(
-        <nav className="nav-wrapper red darken-3">
+        <nav className="nav-wrapper white">
             <div className="container">
-                <a className="brand-logo">Poke'Times</a>
-                <ul className="right">
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink ></li>
+                <a className="brand-logo black-text" >chimmelier</a>
+                <ul className="right ">
+                    <li><NavLink className="black-text" to="/"><i class="large material-icons blaok-text text-black">home</i></NavLink></li>
+                    <li><NavLink className="black-text" to="/about"><i class="large material-icons blaok-text text-black">lock</i></NavLink></li>
+                    <li><NavLink className="black-text" to="/mypage"><i class="large material-icons blaok-text text-black">face</i></NavLink ></li>
                 </ul>
             </div>
         </nav>
