@@ -3,7 +3,7 @@
 ***
 ### Backend-Setup 
 
-Activate Virtual env:-
+Make & Activate Virtual env:-
 ```
 python -m venv venv
 venv\Scripts\activate
@@ -13,18 +13,18 @@ Install Dependencies:-
 cd Backend
 pip install -r requirements.txt
 ```
-Make Migrations:-
+Make DB Migrations:-
 ```
 python ./manage.py makemigrations
 python ./manage.py migrate
 ```
-Create super user:-
+Create admin:-
 ```
 python manage.py createsuperuser
 ```
 Start server for your REST-API:-
 ```
-./manage.py runserver
+python ./manage.py runserver
 ```     
 
 ***
