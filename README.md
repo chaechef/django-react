@@ -1,18 +1,17 @@
 # django-react
 
-
-### Backend-Setup 
 ***
+### Backend-Setup 
+
 Activate Virtual env:-
 ```
- python -m venv venv
- venv\Scripts\activate
+python -m venv venv
+venv\Scripts\activate
 ```
 Install Dependencies:- 
 ```
- cd Backend
-
- pip install -r requirements.txt
+cd Backend
+pip install -r requirements.txt
 ```
 Make Migrations:-
 ```
@@ -22,7 +21,6 @@ python ./manage.py migrate
 Create super user:-
 ```
 python manage.py createsuperuser
-
 ```
 Start server for your REST-API:-
 ```
@@ -30,10 +28,8 @@ Start server for your REST-API:-
 ```     
 
 ***
+###frontend
 
-
-#frontend
-***
 1. cd frontend
 2. npm install
 3. npm start
