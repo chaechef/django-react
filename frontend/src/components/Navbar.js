@@ -8,9 +8,9 @@ const Navbar = (props) =>{
             <div className="container">
                 <a className="brand-logo black-text" >chimmelier</a>
                 <ul className="right ">
-                    <li><NavLink className="black-text" to="/"><i class="large material-icons blaok-text text-black">home</i></NavLink></li>
-                    <li><NavLink className="black-text" to="/about"><i class="large material-icons blaok-text text-black">lock</i></NavLink></li>
-                    <li><NavLink className="black-text" to="/mypage"><i class="large material-icons blaok-text text-black">face</i></NavLink ></li>
+                    <li><NavLink className="black-text" to="/"><i className="large material-icons blaok-text text-black">home</i></NavLink></li>
+                    <li><NavLink className="black-text" to="/about"><i className="large material-icons blaok-text text-black">lock</i></NavLink></li>
+                    <li><NavLink className="black-text" to="/mypage"><i className="large material-icons blaok-text text-black">face</i></NavLink ></li>
                 </ul>
             </div>
         </nav>

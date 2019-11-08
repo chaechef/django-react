@@ -48,6 +48,17 @@ const rootReducer = (state = initState, action) => {
      posts: newPosts,
    }
  } 
+
+ if(action.type === 'FETCH_CHIKHEN'){
+  return {
+      ...state,
+      chickens: action.data,
+    }
+  } 
+
+
+
+
  return state;
 }
 
