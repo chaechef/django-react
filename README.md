@@ -28,7 +28,7 @@ python ./manage.py runserver
 ```     
 
 ***
-### frontend
+### frontend-Setup
 
 Install Dependencies:- 
 ```
