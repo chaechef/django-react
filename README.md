@@ -1,25 +1,52 @@
 # django-react
 
+
+# Backend-Setup 
+
+clone the repositroy:-
+```
+git clone https://github.com/vinitraj10/Django-React-Blog 
+```
+Create Virtual env for django-part:-
+```
+cd Django-React-Blog
+virtualenv app
+```
+Activate Virtual env:-
+```
+app\scripts\activate
+```
+Install Dependencies:-
+```
+cd Backend
+pip install -r requirements.txt
+```
+Make Migrations:-
+```
+./manage.py makemigrations
+./manage.py migrate
+```
+Start server for your REST-API:-
+```
+./manage.py runserver
+```
+
 #backend
 ***
-1. python -m venv venv
-2. venv\Scripts\activate
-3. python -m pip install --upgrade pip
+ python -m venv venv
+ venv\Scripts\activate
 
-   pip install django
-   
-   pip install djangorestframework 
-   
-   pip install django-cors-headers  
-   
-   pip install Pillow
-   
-   cd backend
-   
-4. python manage.py makemigrations
-5. python manage.py migrate
-6. python manage.py createsuperuser
-7. python manage.py runserver
+Install Dependencies:- 
+```
+ cd Backend
+
+ pip install -r requirements.txt
+     
+ python manage.py makemigrations
+ python manage.py migrate
+ python manage.py createsuperuser
+ python manage.py runserver
+ ```
 ***
 
 
