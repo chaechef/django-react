@@ -28,9 +28,14 @@ Start server for your REST-API:-
 ```     
 
 ***
-###frontend
+### frontend
 
-1. cd frontend
-2. npm install
-3. npm start
-***
+Install Dependencies:- 
+```
+cd Backend
+npm install
+```
+Start front server:-
+```
+npm start
+```
